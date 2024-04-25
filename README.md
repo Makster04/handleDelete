@@ -15,8 +15,8 @@ Lambda Function:
 [handleDelete](https://us-west-1.console.aws.amazon.com/lambda/home?region=us-west-1#/functions/handleDelete)
 
 ## Data Flow:
-Client sends a DELETE request to {root_url}/customers/{id}.
-Amazon API Gateway triggers the handleDelete Lambda function.
-Lambda function deletes the record with the specified ID from the database.
-Lambda function returns an empty object as the response.
-Amazon API Gateway sends the response back to the client.
+1. Client sends a DELETE request to {root_url}/customers/{id}.
+2. Amazon API Gateway triggers the handleDelete Lambda function.
+3. Lambda function deletes the record with the specified ID from the database.
+4. Lambda function returns an empty object as the response.
+5. Amazon API Gateway sends the response back to the client.
